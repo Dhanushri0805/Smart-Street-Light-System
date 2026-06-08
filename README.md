@@ -94,4 +94,33 @@ The system successfully turns ON the street light during darkness and turns it O
 ## Conclusion
 
 The Smart Street Light System using LDR provides an energy-efficient and cost-effective solution for automatic street lighting. It reduces power wastage and can be implemented in smart city applications.
+// Smart Street Light System using LDR
 
+int ldrPin = A0;      // LDR connected to Analog Pin A0
+int ledPin = 13;      // LED connected to Digital Pin 13
+int threshold = 500;  // Light threshold value
+
+void setup()
+{
+    pinMode(ledPin, OUTPUT);
+    Serial.begin(9600);
+}
+
+void loop()
+{
+    int ldrValue = analogRead(ldrPin);
+
+    Serial.print("LDR Value: ");
+    Serial.println(ldrValue);
+
+    if (ldrValue < threshold)
+    {
+        digitalWrite(ledPin, HIGH);  // Turn ON LED in darkness
+    }
+    else
+    {
+        digitalWrite(ledPin, LOW);   // Turn OFF LED in daylight
+    }
+
+    delay(100);
+}
