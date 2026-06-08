@@ -102,3 +102,9 @@ The Smart Street Light System using LDR provides an energy-efficient and cost-ef
 Project report is available in:
 
 Report.pdf
+Smart-Street-Light-System
+│
+├── README.md
+├── street_light.ino
+├── Circuit_Diagram.png
+└── Report.pdf
