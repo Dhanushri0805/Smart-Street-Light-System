@@ -95,16 +95,3 @@ The system successfully turns ON the street light during darkness and turns it O
 
 The Smart Street Light System using LDR provides an energy-efficient and cost-effective solution for automatic street lighting. It reduces power wastage and can be implemented in smart city applications.
 
----
-
-## Project Report
-
-Project report is available in:
-
-Report.pdf
-Smart-Street-Light-System
-│
-├── README.md
-├── street_light.ino
-├── Circuit_Diagram.png
-└── Report.pdf
